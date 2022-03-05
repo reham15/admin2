@@ -1,0 +1,42 @@
+sudo apt install lvm2
+sudo pvcreate /dev/sdb /dev/sdc
+sudo pvdisplay /dev/sdb 
+sudo vgcreate iti /dev/sdb /dev/sdc
+sudo vgdisplay iti
+sudo lvcreate -l 80%FREE -n logs iti
+sudo lvcreate -l  100%FREE -n webapp iti
+sudo lvdisplay /dev/iti/logs
+sudo mkfs.ext4  /dev/iti/webapp
+sudo mkdir /logs
+sudo mkdir /webapp
+sudo mkfs.ext4  /dev/iti/logs
+sudo mount /dev/iti/logs /logs 
+sudo mount /dev/iti/webapp  /webapp
+lsblk
+cd  /etc/apache2
+sudo nano sites-available/default.conf
+<VirtualHost *:80>
+ServerAdmin admin@reham.com
+ServerName reham.com
+ServerAlias reham.com
+DocumentRoot /webapp
+ErrorLog /logs/error.log
+CustomLog  /logs/access.log combined
+</VirtualHost>
+sudo touch /webapp/test.html
+sudo nano /webapp/test.html
+
+<html>
+<head>
+<title>Welcome</title>
+</head>
+<body>
+<h1> hello webapp</h1>
+</body>
+</html>
+ sudo systemctl restart apache2
+
+
+
+
+
