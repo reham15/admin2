@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<library>
+	<location>
+		Alexandria,Egypt
+	</location>
+	<description>
+		description
+	</description>
+	<librarian>
+		reham
+	</librarian>
+	<book>
+		<title>
+			xml
+		</title>
+		<ISBN>
+			6541541
+		</ISBN>
+		<author>
+		rere
+		</author>
+		<preface>
+			preface
+		</preface>
+		<part>
+			<chapter title="life of iti">
+				
+				<summary> study</summary>
+				<section>
+					<p>
+                    reham nader nour eldeen
+					</p>
+					<p>
+                    rowan ahmed 
+					</p>
+				</section>
+				<section>
+					<p>
+                    dina alla 
+					</p>
+					<p>
+                    dina ahmed
+					</p>
+				</section>
+			</chapter>
+		</part>
+		<part>
+			<chapter  title="c language">
+				<summary>
+
+                pointer an adress
+				</summary>
+				<section>
+					<p>
+                    loop
+					</p>
+					<p>
+                    condition
+					</p>
+				</section>
+				<section>
+					<p>
+                    function
+					</p>
+					<p>
+                    array
+					</p>
+				</section>
+				<element>
+				</element>
+			</chapter>
+		</part>
+	</book>
+</library>

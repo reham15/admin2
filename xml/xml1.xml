@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE company SYSTEM "company.dtd">
+<company>
+<employee name="reham" >
+
+
+<phone type="work"> 5415412145 </phone>
+
+<phone type="home"> 5068734</phone>
+<phone type="mobile">01062284847</phone>
+<address> 
+
+<street> farouk omar </street>
+<bulding> first</bulding>
+<region> gleem</region>
+<country> egypt</country>
+<city>  alexandria</city>
+<number>1 </number>
+
+
+
+</address>
+<email> rehamnader0123@gmail.com </email>
+
+</employee>
+</company>

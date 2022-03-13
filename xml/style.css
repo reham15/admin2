@@ -1,0 +1,20 @@
+company
+{
+ width:500px;
+ margin:auto;
+ height:700px; 
+}
+employee
+{display: block;
+ color:aqua;
+
+}
+address{
+    display: block;
+    color:blueviolet; 
+}
+email
+{
+    display: block;
+    color:pink;
+}
